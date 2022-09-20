@@ -24,5 +24,9 @@
         "last 1 version",
         "> 1%",
         "IE 10"
-    ]
+    ],
+    "dependencies": {
+        "bootstrap": "^5.2.1",
+        "slick-carousel": "^1.8.1"
+    }
 }
