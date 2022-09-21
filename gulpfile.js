@@ -34,7 +34,7 @@ var path = {
     watch: {
         html: "src/**/*.html",
         js: "src/assets/js/**/*.js",
-        css: "src/assets/sass/**/*.scss",
+        css: "src/assets/sass/**/*.scss,",
         images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}"
     },
     clean: "./dist"
@@ -76,6 +76,7 @@ function css() {
         .pipe(plumber())
         .pipe(sass())
         .pipe(autoprefixer({
+            Browserslist: ['last 8 versions'],
             cascade: true
         }))
         .pipe(cssbeautify())
