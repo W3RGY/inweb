@@ -5,10 +5,18 @@
 	background: linear-gradient(to bottom, #f5576c, #f093fb);
 	box-shadow: 0 5px 25px rgba(0, 0, 0, .15);
 	border-radius: 68% 32% 48% 52% / 60% 54% 46% 40% ;
-	animation: circleRadius 4s alternate infinite;
+	animation: circleRadius 12s alternate infinite;
 	right: 5rem;
 	bottom: 8rem;
 	z-index: 1;
+
+	@media (max-width: $breakpoint_xl) {
+        right: 0;
+    }
+
+    @media (max-width: $breakpoint_sm) {
+        display: none;
+    }
 }
 
 @keyframes circleRadius {

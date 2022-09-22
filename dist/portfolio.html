@@ -24,7 +24,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     
-    <title>HomePage</title>
+    <title>Portfolio</title>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
@@ -171,31 +171,60 @@
     <div class="content">
         
         <div class="container">
-        	<div class="intro">
-        		<div class="intro__text">My name is</div>
-        		<div class="intro__title">Dima Osenkov</div>
-        		<div class="intro__subtitle">I am engaging in <span class="intro__subtitle-pink">web design</span> and <span class="intro__subtitle-pink">creating sites</span></div>
+        	<div class="content__title">Portfolio</div>
         
-        		<div class="row">
-        			<div class="col-lg-3">
-        				<a class="btn  btn--pink" href="#" data-toggle="modal" data-target="#request-modal">Submit your application</a>
-        			</div>
-        			<div class="col-lg-9">
-        				<ul class="contacts">
-        					<li class="contacts__item">
-        						<a class="contacts__link" href="tel:+17000222777">+17000-222-777</a>
-        					</li>
-        					<li class="contacts__item">
-        						<a class="contacts__link" href="mailto:hello@inweb.com">hello@inweb.com</a>
-        					</li>
-        				</ul>
-        			</div>
-        		</div>
-        	</div>
+        	<div class="portfolio">
+                <button class="portfolio__arrow  portfolio__arrow--prev" type="button" id="portfolio-arrow-prev">
+                    <svg class="portfolio__arrow-icon">
+                        <use xlink:href="#arrow-right"></use>
+                    </svg>
+                </button>
+        
+                <button class="portfolio__arrow  portfolio__arrow--next" type="button" id="portfolio-arrow-next">
+                    <svg class="portfolio__arrow-icon">
+                        <use xlink:href="#arrow-right"></use>
+                    </svg>
+                </button>
+        
+                <div class="portfolio__slider" id="portfolio">
+                    <div>
+                        <div class="portfolio__item">
+                            <a class="portfolio__link" href="#" target="_blank">
+                                <img class="portfolio__img" src="assets/img/portfolio/1.jpg" alt="">
+                            </a>
+                            <div class="portfolio__title">Project website CarTuning.pro</div>
+                        </div>
+                    </div>
+        
+                    <div>
+                        <div class="portfolio__item">
+                            <a class="portfolio__link" href="#" target="_blank">
+                                <img class="portfolio__img" src="assets/img/portfolio/2.jpg" alt="">
+                            </a>
+                            <div class="portfolio__title">Project website CarTuning.pro</div>
+                        </div>
+                    </div>
+        
+                    <div>
+                        <div class="portfolio__item">
+                            <a class="portfolio__link" href="#" target="_blank">
+                                <img class="portfolio__img" src="assets/img/portfolio/1.jpg" alt="">
+                            </a>
+                            <div class="portfolio__title">Project website CarTuning.pro</div>
+                        </div>
+                    </div>
+        
+                    <div>
+                        <div class="portfolio__item">
+                            <a class="portfolio__link" href="#" target="_blank">
+                                <img class="portfolio__img" src="assets/img/portfolio/2.jpg" alt="">
+                            </a>
+                            <div class="portfolio__title">Project website CarTuning.pro</div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.portfolio -->
         </div>
-        
-        <img class="author" src="assets/img/man.png " alt="">
-        <div class="circle"></div>
     </div>
     <!-- Footer -->
     <footer class="footer">
